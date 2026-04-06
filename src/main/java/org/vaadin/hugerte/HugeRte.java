@@ -27,7 +27,6 @@ import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.customfield.CustomField;
 import com.vaadin.flow.component.dependency.JavaScript;
-import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.shared.HasThemeVariant;
 import com.vaadin.flow.dom.DomEventListener;
 import com.vaadin.flow.dom.DomListenerRegistration;
@@ -45,9 +44,7 @@ import elemental.json.JsonValue;
  * <p>
  * @author mstahv
  */
-//@Tag("vaadin-huge-rte")
 @JavaScript("context://frontend/hugerteConnector.js")
-@StyleSheet("context://frontend/hugerteLumo.css")
 public class HugeRte extends CustomField<String>
         implements HasSize, HasThemeVariant<HugeRteVariant> {
 
@@ -74,7 +71,6 @@ public class HugeRte extends CustomField<String>
      */
     public HugeRte() {
         super("");
-        addClassName("vaadin-huge-rte");
         setHeight(DEFAULT_HEIGHT);
         getStyle().setOverflow(Overflow.AUTO); // see https://github.com/parttio/hugerte-for-flow/issues/9
 
