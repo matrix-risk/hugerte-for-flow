@@ -3,7 +3,7 @@
 
     <groupId>ca.matrixrisk</groupId>
     <artifactId>hugerte-for-flow</artifactId>
-    <version>1.0.10_1</version>
+    <version>1.0.10_2</version>
     <name>HugeRTE for Flow</name>
     <description>Integration of HugeRTE for Vaadin Flow</description>
     <url>https://github.com/matrix-risk/hugerte-for-flow</url>
