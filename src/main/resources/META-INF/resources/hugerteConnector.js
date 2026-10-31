@@ -125,20 +125,6 @@ window.Vaadin.Flow.hugerteConnector = {
 					aux.dontmove = true;
 				}
 
-                // HugeRTE appends its skin css into the head when gets loaded. Flow applies its css beforehand,
-                // which means, that our custom Lumo css is overridden by the default css of the RTE. Thus our
-                // customization might be ignored and needs additional ugly customization like !importan or
-                // more specific selectors.
-                // Therefore we have this small workaround here to ensure, that our css is loaded AFTER
-                // the hugerte skin css.
-                // Nevertheless, this might break in the future, so for the long term, it might be useful to create
-                // our own lumo skin at some point so that we do not have to hack around this situation.
-                const ourStyles = document.head.querySelector("[href*='hugerteLumo.css']");
-                if (ourStyles) {
-                    document.head.append(ourStyles);
-                } else {
-                    console.error("Could not find 'hugerteLumo.css'. Has it been renamed or moved?");
-                }
             });
 
             ed.on('change', function(e) {

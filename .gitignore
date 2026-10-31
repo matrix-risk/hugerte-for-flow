@@ -4,6 +4,7 @@ frontend/generated
 src/main/dev-bundle
 src/main/frontend/generated
 /.idea/*
+.vscode/
 /src/main/frontend/index.html
 /.npmrc
 /package.json
